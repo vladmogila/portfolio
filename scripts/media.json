@@ -1,0 +1,179 @@
+{
+ "blender-card": {
+  "01-offer": {
+   "type": "image",
+   "w": 1280,
+   "h": 1600
+  },
+  "02-power": {
+   "type": "image",
+   "w": 1280,
+   "h": 1600
+  },
+  "03-modes": {
+   "type": "image",
+   "w": 1280,
+   "h": 1600
+  },
+  "04-2in1": {
+   "type": "image",
+   "w": 1280,
+   "h": 1600
+  },
+  "05-summary": {
+   "type": "image",
+   "w": 1280,
+   "h": 1600
+  },
+  "06-brand": {
+   "type": "image",
+   "w": 1280,
+   "h": 670
+  },
+  "07-quality": {
+   "type": "image",
+   "w": 1280,
+   "h": 390
+  },
+  "08-delivery": {
+   "type": "image",
+   "w": 1280,
+   "h": 690
+  },
+  "09-seller": {
+   "type": "image",
+   "w": 1280,
+   "h": 518
+  },
+  "10-warranty": {
+   "type": "image",
+   "w": 1280,
+   "h": 832
+  }
+ },
+ "magnesium-card": {
+  "01-cover": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "02-usage": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "03-symptoms": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  }
+ },
+ "placemats-card": {
+  "01-main-a": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "02-main-b": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "03-benefits": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  }
+ },
+ "shampuriko": {
+  "post-a": {
+   "type": "image",
+   "w": 1080,
+   "h": 1350
+  },
+  "post-b": {
+   "type": "image",
+   "w": 1080,
+   "h": 1350
+  },
+  "stories-a": {
+   "type": "image",
+   "w": 1080,
+   "h": 1920
+  },
+  "stories-b": {
+   "type": "image",
+   "w": 1080,
+   "h": 1920
+  },
+  "poster": {
+   "type": "image",
+   "w": 1415,
+   "h": 2000
+  }
+ },
+ "manute-bol": {
+  "presentation": {
+   "type": "image",
+   "w": 1414,
+   "h": 2000
+  }
+ },
+ "keychain": {
+  "light": {
+   "type": "image",
+   "w": 1008,
+   "h": 1047
+  },
+  "dark": {
+   "type": "image",
+   "w": 1008,
+   "h": 1047
+  }
+ },
+ "notebook": {
+  "mockup": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "artwork": {
+   "type": "image",
+   "w": 1410,
+   "h": 2000
+  }
+ },
+ "football-poster": {
+  "poster": {
+   "type": "image",
+   "w": 1080,
+   "h": 1350
+  }
+ },
+ "ping-pong": {
+  "animation": {
+   "type": "video",
+   "w": 450,
+   "h": 800
+  }
+ },
+ "blender-3d": {
+  "donut": {
+   "type": "image",
+   "w": 1920,
+   "h": 1080
+  },
+  "popsicle": {
+   "type": "video",
+   "w": 640,
+   "h": 640
+  }
+ },
+ "tihij-menu": {
+  "presentation": {
+   "type": "image",
+   "w": 1414,
+   "h": 2000
+  }
+ }
+}
