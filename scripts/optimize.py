@@ -15,6 +15,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,12 +28,8 @@ FULL_QUALITY = 82
 THUMB_QUALITY = 78
 
 # (папка в works/, файл) -> (папка на сайте, латинское имя без расширения)
+# Слайды 01–05 карточки блендера не публикуются: на них надпись «Тестовое задание».
 MEDIA = [
-    ("Карточка товара - блендер", "01_obshiy_offer.jpg", "blender-card", "01-offer"),
-    ("Карточка товара - блендер", "02_moshnost.jpg", "blender-card", "02-power"),
-    ("Карточка товара - блендер", "03_rezhimy.jpg", "blender-card", "03-modes"),
-    ("Карточка товара - блендер", "04_2v1.jpg", "blender-card", "04-2in1"),
-    ("Карточка товара - блендер", "05_itog.jpg", "blender-card", "05-summary"),
     ("Карточка товара - блендер", "06_o_brende.jpg", "blender-card", "06-brand"),
     ("Карточка товара - блендер", "07_kontrol_kachestva.jpg", "blender-card", "07-quality"),
     ("Карточка товара - блендер", "08_dostavka.jpg", "blender-card", "08-delivery"),
@@ -69,6 +66,57 @@ def fit(im, limit):
     return im
 
 
+# Области, которые надо закрасить фоном (водяные знаки генераторов): файл -> [(x0, y0, x1, y1)]
+RETOUCH = {
+    "Generated Image October 20, 2026 - 7_50PM.png": [(920, 958, 986, 1024)],  # значок Gemini
+}
+# Почти белый фон, на котором генератор оставил еле заметный узор: выравниваем в чистый белый
+FLATTEN_WHITE = {"Generated Image October 20, 2026 - 7_49PM.png"}
+# Обложки, собранные из нескольких кадров: (папка на сайте, имя) -> [кадры сверху вниз]
+COLLAGES = {("blender-card", "cover"): ["06-brand", "07-quality", "08-delivery"]}
+
+
+def retouch(im, boxes):
+    """Закрашивает области размытым окружающим фоном (нормализованная свёртка) и добавляет зерно."""
+    rgb = np.asarray(im.convert("RGB")).astype(np.float32)
+    mask = np.ones(rgb.shape[:2], np.float32)
+    for x0, y0, x1, y1 in boxes:
+        mask[y0:y1, x0:x1] = 0
+    k = np.exp(-0.5 * (np.arange(-48, 49) / 16.0) ** 2)
+    k /= k.sum()
+
+    def blur(a):
+        a = np.apply_along_axis(np.convolve, 0, a, k, "same")
+        return np.apply_along_axis(np.convolve, 1, a, k, "same")
+
+    weight = blur(mask)
+    fill = np.stack([blur(rgb[..., c] * mask) for c in range(3)], -1) / np.maximum(weight, 1e-3)[..., None]
+    noise = np.random.default_rng(0).normal(0, 1.2, rgb.shape).astype(np.float32)
+    out = np.where(mask[..., None] == 0, fill + noise, rgb)
+    return Image.fromarray(np.clip(out, 0, 255).astype(np.uint8))
+
+
+def flatten_white(im):
+    a = np.asarray(im.convert("RGB")).astype(np.float32)
+    low = a.min(axis=2, keepdims=True)
+    t = np.clip((low - 244) / 8, 0, 1)  # 244 -> без изменений, 252+ -> белый
+    t = t * t * (3 - 2 * t)
+    return Image.fromarray(np.clip(a + (255 - a) * t, 0, 255).astype(np.uint8))
+
+
+def collage(dst_dir, name, parts, gap=16, bg=(11, 11, 11)):
+    ims = [Image.open(dst_dir / f"{p}.webp").convert("RGB") for p in parts]
+    w = max(i.width for i in ims)
+    out = Image.new("RGB", (w, sum(i.height for i in ims) + gap * (len(ims) + 1)), bg)
+    y = gap
+    for i in ims:
+        out.paste(i, ((w - i.width) // 2, y))
+        y += i.height + gap
+    full = save_webp(fit(out, FULL_MAX), dst_dir / f"{name}.webp", FULL_QUALITY)
+    save_webp(fit(out, THUMB_MAX), dst_dir / f"{name}-thumb.webp", THUMB_QUALITY)
+    return {"type": "image", **full}
+
+
 def prepare(im):
     """RGBA без реальной прозрачности -> RGB: файл меньше, вид тот же."""
     if im.mode in ("RGBA", "LA", "P"):
@@ -86,6 +134,10 @@ def save_webp(im, path, quality):
 
 def image(src, dst_dir, name):
     im = prepare(Image.open(src))
+    if src.name in RETOUCH:
+        im = retouch(im, RETOUCH[src.name])
+    if src.name in FLATTEN_WHITE:
+        im = flatten_white(im)
     full = save_webp(fit(im, FULL_MAX), dst_dir / f"{name}.webp", FULL_QUALITY)
     save_webp(fit(im, THUMB_MAX), dst_dir / f"{name}-thumb.webp", THUMB_QUALITY)
     return {"type": "image", **full}
@@ -129,6 +181,9 @@ def main():
         info = video(src, dst_dir, name) if src.suffix.lower() == ".mp4" else image(src, dst_dir, name)
         manifest.setdefault(project, {})[name] = info
         print(f"{project}/{name}: {info['w']}x{info['h']}")
+    for (project, name), parts in COLLAGES.items():
+        manifest[project][name] = collage(OUT / project, name, parts)
+        print(f"{project}/{name}: коллаж из {', '.join(parts)}")
     (ROOT / "scripts" / "media.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False))
     total = sum(p.stat().st_size for p in OUT.rglob("*") if p.is_file())
     print(f"Готово: {total / 1024 / 1024:.1f} МБ в {OUT.relative_to(ROOT)}")

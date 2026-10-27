@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Vlad Mogila — graphic & content designer</title>
   <meta name="description" content="Marketplace product cards, ad creatives, AI product visuals and motion. Portfolio and rates.">
   <link rel="canonical" href="https://vladmogila.github.io/portfolio/en/">
   <link rel="alternate" hreflang="ru" href="https://vladmogila.github.io/portfolio/">
   <link rel="alternate" hreflang="en" href="https://vladmogila.github.io/portfolio/en/">
   <link rel="alternate" hreflang="x-default" href="https://vladmogila.github.io/portfolio/">
-  <meta name="theme-color" content="#f3f1ec">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 
@@ -29,314 +31,441 @@
   <meta name="twitter:description" content="Marketplace product cards, ad creatives, AI product visuals and motion. Portfolio and rates.">
   <meta name="twitter:image" content="https://vladmogila.github.io/portfolio/assets/og-en.jpg">
 
-  <link rel="preload" href="../assets/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="header">
-    <div class="wrap header__inner">
-      <a class="logo" href="#top" aria-label="Vlad Mogila">VM<span>.</span></a>
-      <nav class="nav" aria-label="Menu">
-        <a href="#cases">Work</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="lang" href="../" hreflang="ru" lang="ru" aria-label="Русская версия">RU</a>
-    </div>
+  <header class="top">
+    <a class="brand" href="#top">Vlad Mogila</a>
+    <span class="status mono"><i aria-hidden="true"></i>Available for projects</span>
+    <nav class="nav" aria-label="Menu">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="lang mono" href="../" hreflang="ru" lang="ru" aria-label="Русская версия">RU</a>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="wrap hero__inner">
-        <div class="hero__text">
-          <p class="eyebrow">Vlad Mogila · graphic & content designer</p>
-          <h1>Visuals that sell the product</h1>
-          <p class="hero__lead">I design marketplace product cards, ad creatives and AI product visuals — from retouching to finished slides. Working remotely from Tbilisi, UTC+4.</p>
-          <div class="hero__cta">
-            <a class="btn btn--accent" href="https://t.me/mogilav" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.4 13.1l-4.7-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3Z"/></svg>Message on Telegram</a>
-            <a class="btn" href="#cases">See the work</a>
-          </div>
-        </div>
-        <div class="hero__art" aria-hidden="true">
-        <img src="../assets/works/shampuriko/post-a-thumb.webp" width="1080" height="1350" alt="" fetchpriority="high">
-        <img src="../assets/works/blender-card/01-offer-thumb.webp" width="1280" height="1600" alt="" fetchpriority="auto">
-        <img src="../assets/works/manute-bol/presentation-thumb.webp" width="1414" height="2000" alt="" fetchpriority="auto">
-        </div>
-        <ul class="facts">
-          <li><b>Since 2023</b><span>in commercial design; gig posters since 2014</span></li>
-          <li><b>SPbU</b><span>BA in graphic design</span></li>
-          <li><b>Ps · Ai · Figma · Ae · Blender</b><span>core toolkit</span></li>
-        </ul>
+      <p class="mono hero__label reveal">Graphic & content designer · Tbilisi, UTC+4</p>
+      <h1 class="reveal">Product cards, ad creatives and AI visuals <span>that sell.</span></h1>
+      <div class="hero__row reveal">
+        <p class="hero__lead">I’m Vlad Mogila. I design <span class='nowrap'>e-commerce</span> visuals — from generating and retouching the product to finished slides and animation.</p>
+        <a class="btn" href="https://t.me/mogilav" target="_blank" rel="noopener">Start a project <svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </div>
     </section>
 
-    <section class="section" id="cases" aria-labelledby="cases-h">
-      <div class="wrap">
-        <div class="section__head">
-          <h2 id="cases-h">Selected work</h2>
-          <div class="chips" role="group" aria-label="Filter work"><button type="button" class="chip" aria-pressed="true" data-filter="all">All</button><button type="button" class="chip" aria-pressed="false" data-filter="ecom">Marketplaces</button><button type="button" class="chip" aria-pressed="false" data-filter="ads">Ads & social</button><button type="button" class="chip" aria-pressed="false" data-filter="print">Posters & merch</button><button type="button" class="chip" aria-pressed="false" data-filter="motion">Motion & 3D</button></div>
-        </div>
-      <article class="case" id="blender-card" data-cat="ecom">
-        <div class="case__text">
-          <p class="case__num">01 · Marketplaces</p>
-          <h3 class="case__title">Braucher blender product card</h3>
-          <p class="case__meta">Freelance · Wildberries product card</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Design a marketplace card for a blender with a coffee grinder for Wildberries: show power, speed modes and what’s in the box so a shopper gets the benefits in a couple of seconds of scrolling.</dd></div>
-            <div><dt>Solution</dt><dd>Five vertical slides — offer, power and blades, modes, “2 in 1”, summary — plus five horizontal blocks about the brand, quality control, delivery and warranty. Big numbers, a single accent colour, the product on a light background. The product and interior scenes were generated with AI and finished in Photoshop; layout and infographics built from scratch.</dd></div>
-            <div><dt>Result</dt><dd>A complete card to marketplace specs: 5 gallery slides and 5 rich-content blocks in one consistent style, from the main image to the warranty.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/blender-card/01-offer.webp" data-w="1280" data-h="1600"><img src="../assets/works/blender-card/01-offer-thumb.webp" width="1280" height="1600" alt="Main slide: everything for your favourite dishes in one blender" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/blender-card/02-power.webp" data-w="1280" data-h="1600"><img src="../assets/works/blender-card/02-power-thumb.webp" width="1280" height="1600" alt="Slide about 1300 W power and six blades" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/blender-card/03-modes.webp" data-w="1280" data-h="1600"><img src="../assets/works/blender-card/03-modes-thumb.webp" width="1280" height="1600" alt="Slide about five speeds and pulse mode" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/blender-card/04-2in1.webp" data-w="1280" data-h="1600"><img src="../assets/works/blender-card/04-2in1-thumb.webp" width="1280" height="1600" alt="“2 in 1” slide: jug and grinder" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/blender-card/05-summary.webp" data-w="1280" data-h="1600"><img src="../assets/works/blender-card/05-summary-thumb.webp" width="1280" height="1600" alt="Summary slide with specs" loading="lazy" decoding="async"></a>
-          <a class="shot is-wide" href="../assets/works/blender-card/06-brand.webp" data-w="1280" data-h="670"><img src="../assets/works/blender-card/06-brand-thumb.webp" width="1280" height="670" alt="Rich-content block about the brand" loading="lazy" decoding="async"></a>
-          <a class="shot is-wide" href="../assets/works/blender-card/07-quality.webp" data-w="1280" data-h="390"><img src="../assets/works/blender-card/07-quality-thumb.webp" width="1280" height="390" alt="Quality control block" loading="lazy" decoding="async"></a>
-          <a class="shot is-wide" href="../assets/works/blender-card/08-delivery.webp" data-w="1280" data-h="690"><img src="../assets/works/blender-card/08-delivery-thumb.webp" width="1280" height="690" alt="Delivery block" loading="lazy" decoding="async"></a>
-          <a class="shot is-wide" href="../assets/works/blender-card/09-seller.webp" data-w="1280" data-h="518"><img src="../assets/works/blender-card/09-seller-thumb.webp" width="1280" height="518" alt="Seller block" loading="lazy" decoding="async"></a>
-          <a class="shot is-wide" href="../assets/works/blender-card/10-warranty.webp" data-w="1280" data-h="832"><img src="../assets/works/blender-card/10-warranty-thumb.webp" width="1280" height="832" alt="Warranty and chat support block" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="shampuriko" data-cat="ads">
-        <div class="case__text">
-          <p class="case__num">02 · Ads & social</p>
-          <h3 class="case__title">“Hot Thursday” for Shampuriko</h3>
-          <p class="case__meta">Freelance · post, stories, poster · 2026</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Announce a grill-bar chain promo: 20% off a combo every Thursday from 10 to 30 May. The brief: a feed post, stories and a print poster.</dd></div>
-            <div><dt>Solution</dt><dd>Two directions to test: a bold red poster style (A) and a card-based layout on dark (B), each in 4:5 and 9:16, plus a poster with a QR code for the venues. The discount, dates and combo read at a glance.</dd></div>
-            <div><dt>Result</dt><dd>A ready-to-run A/B kit: two styles in two formats plus a poster — one promo that works in the feed, in stories and in the venue.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/shampuriko/post-a.webp" data-w="1080" data-h="1350"><img src="../assets/works/shampuriko/post-a-thumb.webp" width="1080" height="1350" alt="Feed post, variant A" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/shampuriko/post-b.webp" data-w="1080" data-h="1350"><img src="../assets/works/shampuriko/post-b-thumb.webp" width="1080" height="1350" alt="Feed post, variant B" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/shampuriko/stories-a.webp" data-w="1080" data-h="1920"><img src="../assets/works/shampuriko/stories-a-thumb.webp" width="1080" height="1920" alt="Stories, variant A" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/shampuriko/stories-b.webp" data-w="1080" data-h="1920"><img src="../assets/works/shampuriko/stories-b-thumb.webp" width="1080" height="1920" alt="Stories, variant B" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/shampuriko/poster.webp" data-w="1415" data-h="2000"><img src="../assets/works/shampuriko/poster-thumb.webp" width="1415" height="2000" alt="Print poster with a QR code" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="magnesium-card" data-cat="ecom">
-        <div class="case__text">
-          <p class="case__num">03 · Marketplaces</p>
-          <h3 class="case__title">“Magnesium citrate + B6” product card</h3>
-          <p class="case__meta">Freelance · supplement card · 3 slides</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Design a supplement card that feels trustworthy and fits dosage, intake schedule and indications without clutter.</dd></div>
-            <div><dt>Solution</dt><dd>A light, pharmacy-like palette matching the packaging, serif headlines, and data arranged along an orbit around the bottle — the infographic reads like a diagram, not a wall of text. Three slides: cover, usage, symptoms. The bottle and capsules were generated with AI.</dd></div>
-            <div><dt>Result</dt><dd>Three slides in one style: composition, intake schedule and indications read without small print.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/magnesium-card/01-cover.webp" data-w="1500" data-h="2000"><img src="../assets/works/magnesium-card/01-cover-thumb.webp" width="1500" height="2000" alt="Cover: 120 capsules, 600 mg magnesium citrate" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/magnesium-card/02-usage.webp" data-w="1500" data-h="2000"><img src="../assets/works/magnesium-card/02-usage-thumb.webp" width="1500" height="2000" alt="Usage recommendations slide" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/magnesium-card/03-symptoms.webp" data-w="1500" data-h="2000"><img src="../assets/works/magnesium-card/03-symptoms-thumb.webp" width="1500" height="2000" alt="Slide with symptoms it helps with" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="placemats-card" data-cat="ecom">
-        <div class="case__text">
-          <p class="case__num">04 · Marketplaces</p>
-          <h3 class="case__title">“Silver” placemats product card</h3>
-          <p class="case__meta">Freelance · home goods · 3 slides</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Sell an inexpensive decorative item through mood: show the texture, the size and how the placemats look on a table.</dd></div>
-            <div><dt>Solution</dt><dd>Two main-image options to test — a studio shot on light and a candle-lit dinner setting. The benefits slide is a collage of details: size, water resistance, flexibility, heat resistance. The scenes and the product itself were generated with AI.</dd></div>
-            <div><dt>Result</dt><dd>Two main images for different scenarios: the studio shot for search results, the mood shot for holiday collections.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/placemats-card/01-main-a.webp" data-w="1500" data-h="2000"><img src="../assets/works/placemats-card/01-main-a-thumb.webp" width="1500" height="2000" alt="Main image, variant A: studio" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/placemats-card/02-main-b.webp" data-w="1500" data-h="2000"><img src="../assets/works/placemats-card/02-main-b-thumb.webp" width="1500" height="2000" alt="Main image, variant B: festive table" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/placemats-card/03-benefits.webp" data-w="1500" data-h="2000"><img src="../assets/works/placemats-card/03-benefits-thumb.webp" width="1500" height="2000" alt="Benefits slide" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="keychain" data-cat="ecom">
-        <div class="case__text">
-          <p class="case__num">05 · Marketplaces</p>
-          <h3 class="case__title">AI visuals for a ping-pong keychain</h3>
-          <p class="case__meta">Freelance · AI product visual</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Create product visuals of a keychain for a product card and ads — with no studio shoot and no existing product photos.</dd></div>
-            <div><dt>Solution</dt><dd>Two takes — light and dark background, soft light and shadows. The product is fully AI-generated; details, metal and reflections refined in Photoshop.</dd></div>
-            <div><dt>Result</dt><dd>Two finished product shots, ready for a main image or an ad.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/keychain/light.webp" data-w="1008" data-h="1047"><img src="../assets/works/keychain/light-thumb.webp" width="1008" height="1047" alt="Keychain on a light background" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/keychain/dark.webp" data-w="1008" data-h="1047"><img src="../assets/works/keychain/dark-thumb.webp" width="1008" height="1047" alt="Keychain on a dark background" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="manute-bol" data-cat="print">
-        <div class="case__text">
-          <p class="case__num">06 · Posters & merch</p>
-          <h3 class="case__title">Manute Bol — bootleg rap tee</h3>
-          <p class="case__meta">Freelance · merch · collage · typography</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Make a tribute tee to Manute Bol, the league’s tallest shot-blocker, in the spirit of 90s rap bootleg tees — for the crew who threw the parties.</dd></div>
-            <div><dt>Solution</dt><dd>A collage of archive photos, heavy typography and dense colour; the print is prepared for production. Presented on street and basketball-court mockups.</dd></div>
-            <div><dt>Result</dt><dd>The print was produced on tees for the crew. Full project on Behance.</dd></div>
-          </dl>
-          <a class="case__link" href="https://www.behance.net/gallery/255535507/Manute-Bol-Bootleg-Rap-Tee" target="_blank" rel="noopener">View on Behance <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 17 17 7M8 7h9v9"/></svg></a>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/manute-bol/presentation.webp" data-w="1414" data-h="2000"><img src="../assets/works/manute-bol/presentation-thumb.webp" width="1414" height="2000" alt="Manute Bol tee presentation" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="ping-pong" data-cat="motion">
-        <div class="case__text">
-          <p class="case__num">07 · Motion & 3D</p>
-          <h3 class="case__title">Animated ping-pong tournament poster</h3>
-          <p class="case__meta">Freelance · motion · 9:16 poster · 18 seconds</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Invite people to an amateur tournament on 24.10 at Colibring — and keep them watching until the time and the fee.</dd></div>
-            <div><dt>Solution</dt><dd>Strict full-frame typography with animated stick figures playing right between the lines. A minimal palette — black type and red graphics.</dd></div>
-            <div><dt>Result</dt><dd>Everything — date, time, venue and fee — fits into one 18-second loop that’s hard to swipe past.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <figure class="shot is-video"><video src="../assets/works/ping-pong/animation.mp4" poster="../assets/works/ping-pong/animation-poster.webp" width="450" height="800" muted loop playsinline preload="none" aria-label="Animated ping-pong tournament poster"></video></figure>
-        </div>
-      </article>
-      <article class="case" id="notebook" data-cat="print">
-        <div class="case__text">
-          <p class="case__num">08 · Posters & merch</p>
-          <h3 class="case__title">“Scriptonite” notebook</h3>
-          <p class="case__meta">Freelance · cover · banner · print</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>A cover for an A5 fan notebook with a wooden cover, plus a banner to sell it.</dd></div>
-            <div><dt>Solution</dt><dd>A collage of photos on torn paper and tape, with nods to the album “Dom s normalnymi yavleniyami” and the Pavlodar–Moscow route. The banner calls out the format and the cover material.</dd></div>
-            <div><dt>Result</dt><dd>A print-ready cover and a banner that shows the product, format and material on one screen.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/notebook/artwork.webp" data-w="1410" data-h="2000"><img src="../assets/works/notebook/artwork-thumb.webp" width="1410" height="2000" alt="Notebook cover: Scriptonite collage" loading="lazy" decoding="async"></a>
-          <a class="shot" href="../assets/works/notebook/mockup.webp" data-w="1500" data-h="2000"><img src="../assets/works/notebook/mockup-thumb.webp" width="1500" height="2000" alt="Banner for the A5 notebook with a wooden cover" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="football-poster" data-cat="ads">
-        <div class="case__text">
-          <p class="case__num">09 · Ads & social</p>
-          <h3 class="case__title">Colombia vs Brazil matchday poster</h3>
-          <p class="case__meta">Freelance · social · 4:5 post</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Announce a match broadcast on social media with a post that stops the scroll.</dd></div>
-            <div><dt>Solution</dt><dd>Team leaders in close-up, flag colours in the background, and kick-off time as the largest element in the frame.</dd></div>
-            <div><dt>Result</dt><dd>The post reads in a second: who’s playing, when and where — no extra text.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/football-poster/poster.webp" data-w="1080" data-h="1350"><img src="../assets/works/football-poster/poster-thumb.webp" width="1080" height="1350" alt="Colombia vs Brazil matchday poster" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="tihij-menu" data-cat="print">
-        <div class="case__text">
-          <p class="case__num">10 · Posters & merch</p>
-          <h3 class="case__title">“Tihij” — sushi bar menu</h3>
-          <p class="case__meta">Freelance · menu · print · 2020</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>A two-sided menu for a sushi bar: fit thirteen sections on a single spread.</dd></div>
-            <div><dt>Solution</dt><dd>Each section sits under its own vertical label while an engraved octopus drifts across the grid. Print-ready layout.</dd></div>
-            <div><dt>Result</dt><dd>The whole menu fits on one sheet and still reads easily. Full project on Behance.</dd></div>
-          </dl>
-          <a class="case__link" href="https://www.behance.net/gallery/93482807/tihij-Menu-for-restaurant" target="_blank" rel="noopener">View on Behance <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 17 17 7M8 7h9v9"/></svg></a>
-        </div>
-        <div class="case__gallery">
-          <a class="shot" href="../assets/works/tihij-menu/presentation.webp" data-w="1414" data-h="2000"><img src="../assets/works/tihij-menu/presentation-thumb.webp" width="1414" height="2000" alt="“Tihij” menu presentation" loading="lazy" decoding="async"></a>
-        </div>
-      </article>
-      <article class="case" id="blender-3d" data-cat="motion">
-        <div class="case__text">
-          <p class="case__num">11 · Motion & 3D</p>
-          <h3 class="case__title">3D in Blender</h3>
-          <p class="case__meta">Freelance · 3D · rendering · animation</p>
-          <dl class="case__story">
-            <div><dt>Challenge</dt><dd>Create product shots in 3D without a photo shoot: a still life and a short looping animation for social media.</dd></div>
-            <div><dt>Solution</dt><dd>Scene, materials, lighting and rendering: a still life with a doughnut and a mug, and a short popsicle animation on a marble pedestal.</dd></div>
-            <div><dt>Result</dt><dd>A finished render and animation: the whole path from model to final frame done in Blender.</dd></div>
-          </dl>
-        </div>
-        <div class="case__gallery">
-          <a class="shot is-wide" href="../assets/works/blender-3d/donut.webp" data-w="1920" data-h="1080"><img src="../assets/works/blender-3d/donut-thumb.webp" width="1920" height="1080" alt="Render: doughnut and mug" loading="lazy" decoding="async"></a>
-          <figure class="shot is-video"><video src="../assets/works/blender-3d/popsicle.mp4" poster="../assets/works/blender-3d/popsicle-poster.webp" width="640" height="640" muted loop playsinline preload="none" aria-label="Animation: popsicle on a marble pedestal"></video></figure>
-        </div>
-      </article>
+    <div class="marquee" aria-hidden="true">
+      <ul class="marquee__track"><li><img src="../assets/works/shampuriko/post-a-thumb.webp" srcset="../assets/works/shampuriko/post-a-thumb.webp 640w, ../assets/works/shampuriko/post-a.webp 1080w" sizes="240px" width="1080" height="1350" alt="" fetchpriority="high" decoding="async"></li><li><img src="../assets/works/magnesium-card/01-cover-thumb.webp" srcset="../assets/works/magnesium-card/01-cover-thumb.webp 600w, ../assets/works/magnesium-card/01-cover.webp 1500w" sizes="240px" width="1500" height="2000" alt="" fetchpriority="high" decoding="async"></li><li><img src="../assets/works/manute-bol/presentation-thumb.webp" srcset="../assets/works/manute-bol/presentation-thumb.webp 566w, ../assets/works/manute-bol/presentation.webp 1414w" sizes="240px" width="1414" height="2000" alt="" fetchpriority="high" decoding="async"></li><li><img src="../assets/works/blender-card/cover-thumb.webp" srcset="../assets/works/blender-card/cover-thumb.webp 564w, ../assets/works/blender-card/cover.webp 1280w" sizes="240px" width="1280" height="1814" alt="" fetchpriority="high" decoding="async"></li><li><img src="../assets/works/placemats-card/02-main-b-thumb.webp" srcset="../assets/works/placemats-card/02-main-b-thumb.webp 600w, ../assets/works/placemats-card/02-main-b.webp 1500w" sizes="240px" width="1500" height="2000" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/football-poster/poster-thumb.webp" srcset="../assets/works/football-poster/poster-thumb.webp 640w, ../assets/works/football-poster/poster.webp 1080w" sizes="240px" width="1080" height="1350" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/notebook/artwork-thumb.webp" srcset="../assets/works/notebook/artwork-thumb.webp 564w, ../assets/works/notebook/artwork.webp 1410w" sizes="240px" width="1410" height="2000" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/keychain/light-thumb.webp" srcset="../assets/works/keychain/light-thumb.webp 770w, ../assets/works/keychain/light.webp 1008w" sizes="240px" width="1008" height="1047" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/shampuriko/post-b-thumb.webp" srcset="../assets/works/shampuriko/post-b-thumb.webp 640w, ../assets/works/shampuriko/post-b.webp 1080w" sizes="240px" width="1080" height="1350" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/tihij-menu/presentation-thumb.webp" srcset="../assets/works/tihij-menu/presentation-thumb.webp 566w, ../assets/works/tihij-menu/presentation.webp 1414w" sizes="240px" width="1414" height="2000" alt="" loading="lazy" decoding="async"></li></ul>
+      <ul class="marquee__track"><li><img src="../assets/works/shampuriko/post-a-thumb.webp" srcset="../assets/works/shampuriko/post-a-thumb.webp 640w, ../assets/works/shampuriko/post-a.webp 1080w" sizes="240px" width="1080" height="1350" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/magnesium-card/01-cover-thumb.webp" srcset="../assets/works/magnesium-card/01-cover-thumb.webp 600w, ../assets/works/magnesium-card/01-cover.webp 1500w" sizes="240px" width="1500" height="2000" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/manute-bol/presentation-thumb.webp" srcset="../assets/works/manute-bol/presentation-thumb.webp 566w, ../assets/works/manute-bol/presentation.webp 1414w" sizes="240px" width="1414" height="2000" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/blender-card/cover-thumb.webp" srcset="../assets/works/blender-card/cover-thumb.webp 564w, ../assets/works/blender-card/cover.webp 1280w" sizes="240px" width="1280" height="1814" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/placemats-card/02-main-b-thumb.webp" srcset="../assets/works/placemats-card/02-main-b-thumb.webp 600w, ../assets/works/placemats-card/02-main-b.webp 1500w" sizes="240px" width="1500" height="2000" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/football-poster/poster-thumb.webp" srcset="../assets/works/football-poster/poster-thumb.webp 640w, ../assets/works/football-poster/poster.webp 1080w" sizes="240px" width="1080" height="1350" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/notebook/artwork-thumb.webp" srcset="../assets/works/notebook/artwork-thumb.webp 564w, ../assets/works/notebook/artwork.webp 1410w" sizes="240px" width="1410" height="2000" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/keychain/light-thumb.webp" srcset="../assets/works/keychain/light-thumb.webp 770w, ../assets/works/keychain/light.webp 1008w" sizes="240px" width="1008" height="1047" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/shampuriko/post-b-thumb.webp" srcset="../assets/works/shampuriko/post-b-thumb.webp 640w, ../assets/works/shampuriko/post-b.webp 1080w" sizes="240px" width="1080" height="1350" alt="" loading="lazy" decoding="async"></li><li><img src="../assets/works/tihij-menu/presentation-thumb.webp" srcset="../assets/works/tihij-menu/presentation-thumb.webp 566w, ../assets/works/tihij-menu/presentation.webp 1414w" sizes="240px" width="1414" height="2000" alt="" loading="lazy" decoding="async"></li></ul>
+    </div>
+
+    <section class="section" id="work" aria-labelledby="work-h">
+      <div class="section__head">
+        <h2 id="work-h">Work<sup>11</sup></h2>
+        <div class="filters" role="group" aria-label="Filter work"><button type="button" class="filter" aria-pressed="true" data-filter="all">All<sup>11</sup></button><button type="button" class="filter" aria-pressed="false" data-filter="ecom">Marketplaces<sup>4</sup></button><button type="button" class="filter" aria-pressed="false" data-filter="ads">Ads & social<sup>2</sup></button><button type="button" class="filter" aria-pressed="false" data-filter="print">Posters & merch<sup>3</sup></button><button type="button" class="filter" aria-pressed="false" data-filter="motion">Motion & 3D<sup>2</sup></button></div>
       </div>
+      <ul class="grid">
+        <li class="tile reveal" data-cat="ecom">
+          <a href="#blender-card" aria-label="Open case: Braucher blender rich content">
+            <div class="tile__media" style="--fit:contain;--tile-bg:#0b0b0b"><img src="../assets/works/blender-card/cover-thumb.webp" srcset="../assets/works/blender-card/cover-thumb.webp 564w, ../assets/works/blender-card/cover.webp 1280w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1280" height="1814" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">01</span>
+              <h3>Braucher blender rich content</h3>
+              <span class="mono tile__cat">Marketplaces</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="ads">
+          <a href="#shampuriko" aria-label="Open case: “Hot Thursday” for Shampuriko">
+            <div class="tile__media"><img src="../assets/works/shampuriko/post-a-thumb.webp" srcset="../assets/works/shampuriko/post-a-thumb.webp 640w, ../assets/works/shampuriko/post-a.webp 1080w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1080" height="1350" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">02</span>
+              <h3>“Hot Thursday” for Shampuriko</h3>
+              <span class="mono tile__cat">Ads & social</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="ecom">
+          <a href="#magnesium-card" aria-label="Open case: “Magnesium citrate + B6” product card">
+            <div class="tile__media"><img src="../assets/works/magnesium-card/01-cover-thumb.webp" srcset="../assets/works/magnesium-card/01-cover-thumb.webp 600w, ../assets/works/magnesium-card/01-cover.webp 1500w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1500" height="2000" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">03</span>
+              <h3>“Magnesium citrate + B6” product card</h3>
+              <span class="mono tile__cat">Marketplaces</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="ecom">
+          <a href="#placemats-card" aria-label="Open case: “Silver” placemats product card">
+            <div class="tile__media"><img src="../assets/works/placemats-card/02-main-b-thumb.webp" srcset="../assets/works/placemats-card/02-main-b-thumb.webp 600w, ../assets/works/placemats-card/02-main-b.webp 1500w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1500" height="2000" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">04</span>
+              <h3>“Silver” placemats product card</h3>
+              <span class="mono tile__cat">Marketplaces</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="ecom">
+          <a href="#keychain" aria-label="Open case: AI visuals for a ping-pong keychain">
+            <div class="tile__media" style="--fit:contain;--tile-bg:#0b0b0b"><img src="../assets/works/keychain/dark-thumb.webp" srcset="../assets/works/keychain/dark-thumb.webp 770w, ../assets/works/keychain/dark.webp 1008w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1008" height="1047" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">05</span>
+              <h3>AI visuals for a ping-pong keychain</h3>
+              <span class="mono tile__cat">Marketplaces</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="print">
+          <a href="#manute-bol" aria-label="Open case: Manute Bol — bootleg rap tee">
+            <div class="tile__media"><img src="../assets/works/manute-bol/presentation-thumb.webp" srcset="../assets/works/manute-bol/presentation-thumb.webp 566w, ../assets/works/manute-bol/presentation.webp 1414w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1414" height="2000" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">06</span>
+              <h3>Manute Bol — bootleg rap tee</h3>
+              <span class="mono tile__cat">Posters & merch</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="motion">
+          <a href="#ping-pong" aria-label="Open case: Animated ping-pong tournament poster">
+            <div class="tile__media" style="--fit:contain;--tile-bg:#efeeea"><video src="../assets/works/ping-pong/animation.mp4" poster="../assets/works/ping-pong/animation-poster.webp" width="450" height="800" muted loop playsinline preload="none" aria-label=""></video></div>
+            <div class="tile__meta">
+              <span class="mono">07</span>
+              <h3>Animated ping-pong tournament poster</h3>
+              <span class="mono tile__cat">Motion & 3D</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="print">
+          <a href="#notebook" aria-label="Open case: “Scriptonite” notebook">
+            <div class="tile__media"><img src="../assets/works/notebook/artwork-thumb.webp" srcset="../assets/works/notebook/artwork-thumb.webp 564w, ../assets/works/notebook/artwork.webp 1410w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1410" height="2000" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">08</span>
+              <h3>“Scriptonite” notebook</h3>
+              <span class="mono tile__cat">Posters & merch</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="ads">
+          <a href="#football-poster" aria-label="Open case: Colombia vs Brazil matchday poster">
+            <div class="tile__media"><img src="../assets/works/football-poster/poster-thumb.webp" srcset="../assets/works/football-poster/poster-thumb.webp 640w, ../assets/works/football-poster/poster.webp 1080w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1080" height="1350" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">09</span>
+              <h3>Colombia vs Brazil matchday poster</h3>
+              <span class="mono tile__cat">Ads & social</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="print">
+          <a href="#tihij-menu" aria-label="Open case: “Tihij” — sushi bar menu">
+            <div class="tile__media"><img src="../assets/works/tihij-menu/presentation-thumb.webp" srcset="../assets/works/tihij-menu/presentation-thumb.webp 566w, ../assets/works/tihij-menu/presentation.webp 1414w" sizes="(min-width: 1100px) 31vw, (min-width: 700px) 46vw, 92vw" width="1414" height="2000" alt="" loading="lazy" decoding="async"></div>
+            <div class="tile__meta">
+              <span class="mono">10</span>
+              <h3>“Tihij” — sushi bar menu</h3>
+              <span class="mono tile__cat">Posters & merch</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile reveal" data-cat="motion">
+          <a href="#blender-3d" aria-label="Open case: 3D in Blender">
+            <div class="tile__media"><video src="../assets/works/blender-3d/popsicle.mp4" poster="../assets/works/blender-3d/popsicle-poster.webp" width="640" height="640" muted loop playsinline preload="none" aria-label=""></video></div>
+            <div class="tile__meta">
+              <span class="mono">11</span>
+              <h3>3D in Blender</h3>
+              <span class="mono tile__cat">Motion & 3D</span>
+            </div>
+          </a>
+        </li>
+        <li class="tile tile--cta reveal">
+          <a href="#contact">
+            <div class="tile__media"><div><p class="tile__cta-title">Your project could be next</p><p class="tile__cta-text">Tell me about your task — I’ll reply with an estimate within a day.</p></div><span class="tile__cta-arrow"><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+          </a>
+        </li>
+      </ul>
     </section>
 
-    <section class="section section--alt" id="services" aria-labelledby="services-h">
-      <div class="wrap">
-        <div class="section__head">
-          <h2 id="services-h">Services & rates</h2>
-          <p class="section__lead">Prices are starting points: the final quote depends on scope and deadline. Send me your brief — I’ll reply with an estimate the same day.</p>
-        </div>
-        <ul class="services">
-        <li class="service">
+    <section class="section about" aria-labelledby="about-h">
+      <h2 id="about-h" class="mono">About</h2>
+      <p class="about__text reveal">Since 2023 I’ve been designing for online stores and brands; before that I spent four years producing concerts — posters, ads and merch included. BA in graphic design, Saint Petersburg State University.</p>
+      <dl class="about__facts reveal">
+          <div><dt class="mono">Tools</dt><dd>Photoshop, Illustrator, Figma, After Effects, Blender</dd></div>
+          <div><dt class="mono">AI</dt><dd>Midjourney, Firefly, Nano Banana, Runway, ChatGPT</dd></div>
+          <div><dt class="mono">Languages</dt><dd>Russian — native, English — B2</dd></div>
+          <div><dt class="mono">Format</dt><dd>Remote, UTC+4</dd></div>
+      </dl>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-h">
+      <div class="section__head">
+        <h2 id="services-h">Services & rates</h2>
+        <p class="section__lead">Prices are starting points: the final quote depends on scope and deadline. Send me your brief — I’ll reply with an estimate the same day.</p>
+      </div>
+      <ul class="prices">
+        <li class="price reveal">
           <h3>Full product card</h3>
           <p>Main image plus 5–7 slides: structure, retouching, infographics, on-slide copy.</p>
-          <p class="service__price">from $35</p>
+          <b>from $35</b>
         </li>
-        <li class="service">
+        <li class="price reveal">
           <h3>Ad creative with animation</h3>
           <p>Static or animated 4:5 creative to your brief, adapted for stories.</p>
-          <p class="service__price">from $20</p>
+          <b>from $20</b>
         </li>
-        <li class="service">
+        <li class="price reveal">
           <h3>Social post or mini poster</h3>
           <p>A single layout for social media or an event announcement.</p>
-          <p class="service__price">from $15</p>
+          <b>from $15</b>
         </li>
-        <li class="service">
+        <li class="price reveal">
           <h3>Reels &amp; Shorts editing</h3>
           <p>Simple edit from $15, with motion graphics from $35.</p>
-          <p class="service__price">from $15</p>
+          <b>from $15</b>
         </li>
-        <li class="service">
+        <li class="price reveal">
           <h3>AI product visual</h3>
           <p>Product and scene generated with AI; details, light and colour refined by hand in Photoshop.</p>
-          <p class="service__price">from $15</p>
+          <b>from $15</b>
         </li>
-        <li class="service">
+        <li class="price reveal">
           <h3>Hourly work</h3>
           <p>Edits, adaptations and urgent tasks without a fixed scope.</p>
-          <p class="service__price">from $10/h</p>
+          <b>from $10/h</b>
         </li>
-        </ul>
-        <p class="terms">Prices in US dollars. Payment by bank transfer or Payoneer. New clients: 50% upfront or milestone payments. Source files are delivered after payment.</p>
-      </div>
+      </ul>
+      <p class="terms mono">Prices in US dollars. Payment by bank transfer or Payoneer. New clients: 50% upfront or milestone payments. Source files are delivered after payment.</p>
     </section>
 
     <section class="section contact" id="contact" aria-labelledby="contact-h">
-      <div class="wrap">
-        <h2 id="contact-h">Let’s talk about your project</h2>
-        <p class="section__lead">Telegram is the fastest way to reach me. Send a product link or brief, your deadline and budget.</p>
-        <div class="contact__links">
-          <a class="contact__link" href="https://t.me/mogilav" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.4 13.1l-4.7-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3Z"/></svg><span>Telegram</span><b>@mogilav</b></a>
-          <a class="contact__link" href="mailto:mogilawork@gmail.com"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg><span>Email</span><b>mogilawork@gmail.com</b></a>
-        </div>
-      </div>
+      <h2 id="contact-h" class="reveal">Got a project?</h2>
+      <p class="section__lead reveal">Send a product link or brief, your deadline and budget. Telegram is the fastest way to reach me.</p>
+      <ul class="contact__list">
+        <li class="reveal"><a href="https://t.me/mogilav" target="_blank" rel="noopener"><span class="mono">Telegram</span><b>@mogilav</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+        <li class="reveal"><a href="mailto:mogilawork@gmail.com"><span class="mono">Email</span><b>mogilawork@gmail.com</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+      </ul>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <span>© 2026 Vlad Mogila</span>
-      <a href="../" hreflang="ru">Русская версия</a>
-    </div>
+  <footer class="footer mono">
+    <span>© 2026 Vlad Mogila</span>
+    <a href="../" hreflang="ru">Русская версия</a>
+    <a href="#top">Back to top ↑</a>
   </footer>
 
-  <dialog class="lightbox" aria-label="Vlad Mogila — graphic & content designer">
-    <figure class="lightbox__figure">
-      <img class="lightbox__img" alt="">
-      <figcaption class="lightbox__caption"></figcaption>
-    </figure>
-    <button class="lightbox__btn lightbox__close" type="button" aria-label="Close">✕</button>
-    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Previous">←</button>
-    <button class="lightbox__btn lightbox__next" type="button" aria-label="Next">→</button>
+  <dialog class="case" id="blender-card" aria-labelledby="blender-card-title">
+    <div class="case__bar">
+      <span class="mono">01 / 11 — Marketplaces</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="blender-card-title">Braucher blender rich content</h2>
+        <p class="case__meta">Freelance · Wildberries rich content · 5 blocks</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Design rich-content blocks for a blender listing on Wildberries: present the brand, quality control, delivery, the seller and the warranty to remove doubts before purchase.</dd></div><div><dt class="mono">Solution</dt><dd>Five horizontal blocks in one system: dark background, large headlines, the brand’s red accent and one story per block. Scenes and people were generated with AI and finished in Photoshop; layout built from scratch.</dd></div><div><dt class="mono">Result</dt><dd>A consistent series of five blocks answering the buyer’s main questions: who sells it, how it’s delivered and what happens if something goes wrong.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot shot--wide"><img src="../assets/works/blender-card/06-brand-thumb.webp" srcset="../assets/works/blender-card/06-brand-thumb.webp 800w, ../assets/works/blender-card/06-brand.webp 1280w" sizes="(min-width: 960px) 58vw, 100vw" width="1280" height="670" alt="Rich-content block about the brand" loading="lazy" decoding="async"></figure>
+          <figure class="shot shot--wide"><img src="../assets/works/blender-card/07-quality-thumb.webp" srcset="../assets/works/blender-card/07-quality-thumb.webp 800w, ../assets/works/blender-card/07-quality.webp 1280w" sizes="(min-width: 960px) 58vw, 100vw" width="1280" height="390" alt="Quality control block" loading="lazy" decoding="async"></figure>
+          <figure class="shot shot--wide"><img src="../assets/works/blender-card/08-delivery-thumb.webp" srcset="../assets/works/blender-card/08-delivery-thumb.webp 800w, ../assets/works/blender-card/08-delivery.webp 1280w" sizes="(min-width: 960px) 58vw, 100vw" width="1280" height="690" alt="Delivery block" loading="lazy" decoding="async"></figure>
+          <figure class="shot shot--wide"><img src="../assets/works/blender-card/09-seller-thumb.webp" srcset="../assets/works/blender-card/09-seller-thumb.webp 800w, ../assets/works/blender-card/09-seller.webp 1280w" sizes="(min-width: 960px) 58vw, 100vw" width="1280" height="518" alt="Seller block" loading="lazy" decoding="async"></figure>
+          <figure class="shot shot--wide"><img src="../assets/works/blender-card/10-warranty-thumb.webp" srcset="../assets/works/blender-card/10-warranty-thumb.webp 800w, ../assets/works/blender-card/10-warranty.webp 1280w" sizes="(min-width: 960px) 58vw, 100vw" width="1280" height="832" alt="Warranty and chat support block" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#shampuriko"><span class="mono">Next project</span><b>“Hot Thursday” for Shampuriko</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="shampuriko" aria-labelledby="shampuriko-title">
+    <div class="case__bar">
+      <span class="mono">02 / 11 — Ads & social</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="shampuriko-title">“Hot Thursday” for Shampuriko</h2>
+        <p class="case__meta">Freelance · post, stories, poster · 2026</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Announce a grill-bar chain promo: 20% off a combo every Thursday from 10 to 30 May. The brief: a feed post, stories and a print poster.</dd></div><div><dt class="mono">Solution</dt><dd>Two directions to test: a bold red poster style (A) and a card-based layout on dark (B), each in 4:5 and 9:16, plus a poster with a QR code for the venues. The discount, dates and combo read at a glance.</dd></div><div><dt class="mono">Result</dt><dd>A ready-to-run A/B kit: two styles in two formats plus a poster — one promo that works in the feed, in stories and in the venue.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/shampuriko/post-a-thumb.webp" srcset="../assets/works/shampuriko/post-a-thumb.webp 640w, ../assets/works/shampuriko/post-a.webp 1080w" sizes="(min-width: 960px) 58vw, 100vw" width="1080" height="1350" alt="Feed post, variant A" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/shampuriko/post-b-thumb.webp" srcset="../assets/works/shampuriko/post-b-thumb.webp 640w, ../assets/works/shampuriko/post-b.webp 1080w" sizes="(min-width: 960px) 58vw, 100vw" width="1080" height="1350" alt="Feed post, variant B" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/shampuriko/stories-a-thumb.webp" srcset="../assets/works/shampuriko/stories-a-thumb.webp 450w, ../assets/works/shampuriko/stories-a.webp 1080w" sizes="(min-width: 960px) 58vw, 100vw" width="1080" height="1920" alt="Stories, variant A" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/shampuriko/stories-b-thumb.webp" srcset="../assets/works/shampuriko/stories-b-thumb.webp 450w, ../assets/works/shampuriko/stories-b.webp 1080w" sizes="(min-width: 960px) 58vw, 100vw" width="1080" height="1920" alt="Stories, variant B" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/shampuriko/poster-thumb.webp" srcset="../assets/works/shampuriko/poster-thumb.webp 566w, ../assets/works/shampuriko/poster.webp 1415w" sizes="(min-width: 960px) 58vw, 100vw" width="1415" height="2000" alt="Print poster with a QR code" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#magnesium-card"><span class="mono">Next project</span><b>“Magnesium citrate + B6” product card</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="magnesium-card" aria-labelledby="magnesium-card-title">
+    <div class="case__bar">
+      <span class="mono">03 / 11 — Marketplaces</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="magnesium-card-title">“Magnesium citrate + B6” product card</h2>
+        <p class="case__meta">Freelance · supplement card · 3 slides</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Design a supplement card that feels trustworthy and fits dosage, intake schedule and indications without clutter.</dd></div><div><dt class="mono">Solution</dt><dd>A light, pharmacy-like palette matching the packaging, serif headlines, and data arranged along an orbit around the bottle — the infographic reads like a diagram, not a wall of text. Three slides: cover, usage, symptoms. The bottle and capsules were generated with AI.</dd></div><div><dt class="mono">Result</dt><dd>Three slides in one style: composition, intake schedule and indications read without small print.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/magnesium-card/01-cover-thumb.webp" srcset="../assets/works/magnesium-card/01-cover-thumb.webp 600w, ../assets/works/magnesium-card/01-cover.webp 1500w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" alt="Cover: 120 capsules, 600 mg magnesium citrate" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/magnesium-card/02-usage-thumb.webp" srcset="../assets/works/magnesium-card/02-usage-thumb.webp 600w, ../assets/works/magnesium-card/02-usage.webp 1500w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" alt="Usage recommendations slide" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/magnesium-card/03-symptoms-thumb.webp" srcset="../assets/works/magnesium-card/03-symptoms-thumb.webp 600w, ../assets/works/magnesium-card/03-symptoms.webp 1500w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" alt="Slide with symptoms it helps with" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#placemats-card"><span class="mono">Next project</span><b>“Silver” placemats product card</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="placemats-card" aria-labelledby="placemats-card-title">
+    <div class="case__bar">
+      <span class="mono">04 / 11 — Marketplaces</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="placemats-card-title">“Silver” placemats product card</h2>
+        <p class="case__meta">Freelance · home goods · 3 slides</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Sell an inexpensive decorative item through mood: show the texture, the size and how the placemats look on a table.</dd></div><div><dt class="mono">Solution</dt><dd>Two main-image options to test — a studio shot on light and a candle-lit dinner setting. The benefits slide is a collage of details: size, water resistance, flexibility, heat resistance. The scenes and the product itself were generated with AI.</dd></div><div><dt class="mono">Result</dt><dd>Two main images for different scenarios: the studio shot for search results, the mood shot for holiday collections.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/placemats-card/01-main-a-thumb.webp" srcset="../assets/works/placemats-card/01-main-a-thumb.webp 600w, ../assets/works/placemats-card/01-main-a.webp 1500w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" alt="Main image, variant A: studio" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/placemats-card/02-main-b-thumb.webp" srcset="../assets/works/placemats-card/02-main-b-thumb.webp 600w, ../assets/works/placemats-card/02-main-b.webp 1500w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" alt="Main image, variant B: festive table" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/placemats-card/03-benefits-thumb.webp" srcset="../assets/works/placemats-card/03-benefits-thumb.webp 600w, ../assets/works/placemats-card/03-benefits.webp 1500w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" alt="Benefits slide" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#keychain"><span class="mono">Next project</span><b>AI visuals for a ping-pong keychain</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="keychain" aria-labelledby="keychain-title">
+    <div class="case__bar">
+      <span class="mono">05 / 11 — Marketplaces</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="keychain-title">AI visuals for a ping-pong keychain</h2>
+        <p class="case__meta">Freelance · AI product visual</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Create product visuals of a keychain for a product card and ads — with no studio shoot and no existing product photos.</dd></div><div><dt class="mono">Solution</dt><dd>Two takes — light and dark background, soft light and shadows. The product is fully AI-generated; details, metal and reflections refined in Photoshop.</dd></div><div><dt class="mono">Result</dt><dd>Two finished product shots, ready for a main image or an ad.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/keychain/light-thumb.webp" srcset="../assets/works/keychain/light-thumb.webp 770w, ../assets/works/keychain/light.webp 1008w" sizes="(min-width: 960px) 58vw, 100vw" width="1008" height="1047" alt="Keychain on a light background" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/keychain/dark-thumb.webp" srcset="../assets/works/keychain/dark-thumb.webp 770w, ../assets/works/keychain/dark.webp 1008w" sizes="(min-width: 960px) 58vw, 100vw" width="1008" height="1047" alt="Keychain on a dark background" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#manute-bol"><span class="mono">Next project</span><b>Manute Bol — bootleg rap tee</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="manute-bol" aria-labelledby="manute-bol-title">
+    <div class="case__bar">
+      <span class="mono">06 / 11 — Posters & merch</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="manute-bol-title">Manute Bol — bootleg rap tee</h2>
+        <p class="case__meta">Freelance · merch · collage · typography</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Make a tribute tee to Manute Bol, the league’s tallest shot-blocker, in the spirit of 90s rap bootleg tees — for the crew who threw the parties.</dd></div><div><dt class="mono">Solution</dt><dd>A collage of archive photos, heavy typography and dense colour; the print is prepared for production. Presented on street and basketball-court mockups.</dd></div><div><dt class="mono">Result</dt><dd>The print was produced on tees for the crew. Full project on Behance.</dd></div></dl>
+        <a class="case__link" href="https://www.behance.net/gallery/255535507/Manute-Bol-Bootleg-Rap-Tee" target="_blank" rel="noopener">Behance <svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/manute-bol/presentation-thumb.webp" srcset="../assets/works/manute-bol/presentation-thumb.webp 566w, ../assets/works/manute-bol/presentation.webp 1414w" sizes="(min-width: 960px) 58vw, 100vw" width="1414" height="2000" alt="Manute Bol tee presentation" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#ping-pong"><span class="mono">Next project</span><b>Animated ping-pong tournament poster</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="ping-pong" aria-labelledby="ping-pong-title">
+    <div class="case__bar">
+      <span class="mono">07 / 11 — Motion & 3D</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="ping-pong-title">Animated ping-pong tournament poster</h2>
+        <p class="case__meta">Freelance · motion · 9:16 poster · 18 seconds</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Invite people to an amateur tournament on 24.10 at Colibring — and keep them watching until the time and the fee.</dd></div><div><dt class="mono">Solution</dt><dd>Strict full-frame typography with animated stick figures playing right between the lines. A minimal palette — black type and red graphics.</dd></div><div><dt class="mono">Result</dt><dd>Everything — date, time, venue and fee — fits into one 18-second loop that’s hard to swipe past.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot"><video src="../assets/works/ping-pong/animation.mp4" poster="../assets/works/ping-pong/animation-poster.webp" width="450" height="800" muted loop playsinline preload="none" aria-label="Animated ping-pong tournament poster"></video></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#notebook"><span class="mono">Next project</span><b>“Scriptonite” notebook</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="notebook" aria-labelledby="notebook-title">
+    <div class="case__bar">
+      <span class="mono">08 / 11 — Posters & merch</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="notebook-title">“Scriptonite” notebook</h2>
+        <p class="case__meta">Freelance · cover · banner · print</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>A cover for an A5 fan notebook with a wooden cover, plus a banner to sell it.</dd></div><div><dt class="mono">Solution</dt><dd>A collage of photos on torn paper and tape, with nods to the album “Dom s normalnymi yavleniyami” and the Pavlodar–Moscow route. The banner calls out the format and the cover material.</dd></div><div><dt class="mono">Result</dt><dd>A print-ready cover and a banner that shows the product, format and material on one screen.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/notebook/artwork-thumb.webp" srcset="../assets/works/notebook/artwork-thumb.webp 564w, ../assets/works/notebook/artwork.webp 1410w" sizes="(min-width: 960px) 58vw, 100vw" width="1410" height="2000" alt="Notebook cover: Scriptonite collage" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="../assets/works/notebook/mockup-thumb.webp" srcset="../assets/works/notebook/mockup-thumb.webp 600w, ../assets/works/notebook/mockup.webp 1500w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" alt="Banner for the A5 notebook with a wooden cover" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#football-poster"><span class="mono">Next project</span><b>Colombia vs Brazil matchday poster</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="football-poster" aria-labelledby="football-poster-title">
+    <div class="case__bar">
+      <span class="mono">09 / 11 — Ads & social</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="football-poster-title">Colombia vs Brazil matchday poster</h2>
+        <p class="case__meta">Freelance · social · 4:5 post</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Announce a match broadcast on social media with a post that stops the scroll.</dd></div><div><dt class="mono">Solution</dt><dd>Team leaders in close-up, flag colours in the background, and kick-off time as the largest element in the frame.</dd></div><div><dt class="mono">Result</dt><dd>The post reads in a second: who’s playing, when and where — no extra text.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/football-poster/poster-thumb.webp" srcset="../assets/works/football-poster/poster-thumb.webp 640w, ../assets/works/football-poster/poster.webp 1080w" sizes="(min-width: 960px) 58vw, 100vw" width="1080" height="1350" alt="Colombia vs Brazil matchday poster" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#tihij-menu"><span class="mono">Next project</span><b>“Tihij” — sushi bar menu</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="tihij-menu" aria-labelledby="tihij-menu-title">
+    <div class="case__bar">
+      <span class="mono">10 / 11 — Posters & merch</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="tihij-menu-title">“Tihij” — sushi bar menu</h2>
+        <p class="case__meta">Freelance · menu · print · 2020</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>A two-sided menu for a sushi bar: fit thirteen sections on a single spread.</dd></div><div><dt class="mono">Solution</dt><dd>Each section sits under its own vertical label while an engraved octopus drifts across the grid. Print-ready layout.</dd></div><div><dt class="mono">Result</dt><dd>The whole menu fits on one sheet and still reads easily. Full project on Behance.</dd></div></dl>
+        <a class="case__link" href="https://www.behance.net/gallery/93482807/tihij-Menu-for-restaurant" target="_blank" rel="noopener">Behance <svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <div class="case__media">
+          <figure class="shot"><img src="../assets/works/tihij-menu/presentation-thumb.webp" srcset="../assets/works/tihij-menu/presentation-thumb.webp 566w, ../assets/works/tihij-menu/presentation.webp 1414w" sizes="(min-width: 960px) 58vw, 100vw" width="1414" height="2000" alt="“Tihij” menu presentation" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#blender-3d"><span class="mono">Next project</span><b>3D in Blender</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </dialog>
+  <dialog class="case" id="blender-3d" aria-labelledby="blender-3d-title">
+    <div class="case__bar">
+      <span class="mono">11 / 11 — Motion & 3D</span>
+      <a class="case__close" href="#work" data-close>Close <span aria-hidden="true">✕</span></a>
+    </div>
+    <div class="case__body">
+      <div class="case__info">
+        <h2 id="blender-3d-title">3D in Blender</h2>
+        <p class="case__meta">Freelance · 3D · rendering · animation</p>
+        <dl class="case__story"><div><dt class="mono">Challenge</dt><dd>Create product shots in 3D without a photo shoot: a still life and a short looping animation for social media.</dd></div><div><dt class="mono">Solution</dt><dd>Scene, materials, lighting and rendering: a still life with a doughnut and a mug, and a short popsicle animation on a marble pedestal.</dd></div><div><dt class="mono">Result</dt><dd>A finished render and animation: the whole path from model to final frame done in Blender.</dd></div></dl>
+        
+      </div>
+      <div class="case__media">
+          <figure class="shot shot--wide"><img src="../assets/works/blender-3d/donut-thumb.webp" srcset="../assets/works/blender-3d/donut-thumb.webp 800w, ../assets/works/blender-3d/donut.webp 1920w" sizes="(min-width: 960px) 58vw, 100vw" width="1920" height="1080" alt="Render: doughnut and mug" loading="lazy" decoding="async"></figure>
+          <figure class="shot"><video src="../assets/works/blender-3d/popsicle.mp4" poster="../assets/works/blender-3d/popsicle-poster.webp" width="640" height="640" muted loop playsinline preload="none" aria-label="Animation: popsicle on a marble pedestal"></video></figure>
+      </div>
+    </div>
+    <a class="case__next" href="#blender-card"><span class="mono">Next project</span><b>Braucher blender rich content</b><svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
   </dialog>
 </body>
 </html>
