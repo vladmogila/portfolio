@@ -30,33 +30,53 @@ THUMB_QUALITY = 78
 # (папка в works/, файл) -> (папка на сайте, латинское имя без расширения)
 # Слайды 01–05 карточки блендера не публикуются: на них надпись «Тестовое задание».
 MEDIA = [
-    ("Карточка товара - блендер", "06_o_brende.jpg", "blender-card", "06-brand"),
-    ("Карточка товара - блендер", "07_kontrol_kachestva.jpg", "blender-card", "07-quality"),
-    ("Карточка товара - блендер", "08_dostavka.jpg", "blender-card", "08-delivery"),
-    ("Карточка товара - блендер", "09_prodavec.jpg", "blender-card", "09-seller"),
-    ("Карточка товара - блендер", "10_chat_garantiya.jpg", "blender-card", "10-warranty"),
-    ("Карточка товара - таблетки", "HF-magniy-01-oblozhka.png", "magnesium-card", "01-cover"),
-    ("Карточка товара - таблетки", "HF-magniy-02-primenenie.png", "magnesium-card", "02-usage"),
-    ("Карточка товара - таблетки", "HF-magniy-03-simptomy.png", "magnesium-card", "03-symptoms"),
-    ("Салфетки", "01_glavnoe_foto_A.png", "placemats-card", "01-main-a"),
-    ("Салфетки", "главное фтото2.png", "placemats-card", "02-main-b"),
-    ("Салфетки", "03_slayd_UTP.png", "placemats-card", "03-benefits"),
+    ("Брюки и плащ - Wildberries", "spichka_b01.jpg", "pants-card", "01-main-studio"),
+    ("Брюки и плащ - Wildberries", "spichka_b02.jpg", "pants-card", "02-main-city"),
+    ("Брюки и плащ - Wildberries", "spichka_b03.jpg", "pants-card", "03-volume"),
+    ("Брюки и плащ - Wildberries", "spichka_b04.jpg", "pants-card", "04-details"),
+    ("Брюки и плащ - Wildberries", "spichka_b05.jpg", "pants-card", "05-back-side"),
+    ("Брюки и плащ - Wildberries", "spichka_b06.jpg", "pants-card", "06-looks"),
+    ("Брюки и плащ - Wildberries", "ai_bryuki.jpg", "pants-card", "07-before-after"),
+    ("Брюки и плащ - Wildberries", "spichka_p_new.jpg", "pants-card", "08-coat"),
+    ("Брюки и плащ - Wildberries", "spichka_p_doposle.jpg", "pants-card", "09-coat-before-after"),
+    ("Серьги - главные фото и воронка", "serga_main1.jpg", "earrings-card", "01-main-velvet"),
+    ("Серьги - главные фото и воронка", "serga_main2.jpg", "earrings-card", "02-main-ear"),
+    ("Серьги - главные фото и воронка", "serga_main3.jpg", "earrings-card", "03-main-portrait"),
+    ("Серьги - главные фото и воронка", "serga_main4.jpg", "earrings-card", "04-main-hand"),
+    ("Серьги - главные фото и воронка", "ai_serga.jpg", "earrings-card", "05-before-after"),
+    ("Серьги - главные фото и воронка", "serga_v1.jpg", "earrings-card", "06-funnel-face"),
+    ("Серьги - главные фото и воронка", "serga_v2.jpg", "earrings-card", "07-funnel-macro"),
+    ("Серьги - главные фото и воронка", "serga_v3.jpg", "earrings-card", "08-funnel-coating"),
+    ("Серьги - главные фото и воронка", "serga_v4.jpg", "earrings-card", "09-funnel-look"),
+    ("Серьги - главные фото и воронка", "serga_v5.jpg", "earrings-card", "10-funnel-backs"),
+    ("Серьги - главные фото и воронка", "serga_v6.jpg", "earrings-card", "11-funnel-size"),
+    ("AI-фотосессии", "ladea_opera.png", "ai-fashion", "ladea-opera"),
+    ("AI-фотосессии", "ladea_blush.png", "ai-fashion", "ladea-blush"),
+    ("AI-фотосессии", "aicd_result.jpg", "ai-fashion", "jeans"),
+    ("LEGENDA", "legenda-print.mp4", "legenda", "print-comes-alive"),
+    ("Reels", "vrach1.mp4", "reels", "clinic-reedit"),
+    ("Reels", "vrach3.mp4", "reels", "clinic-no-camera"),
+    ("Reels", "bvrly.mp4", "reels", "bvrly"),
+    ("Reels", "makeunion.mp4", "reels", "makeunion"),
+    ("Reels", "glasno.mp4", "reels", "glasno"),
+    ("AI-видео", "surreal.mp4", "ai-video", "surreal"),
+    ("AI-видео", "khinkali.mp4", "ai-video", "khinkali"),
     ("Креатив - Шампурико", "ПостВариантА.jpg", "shampuriko", "post-a"),
     ("Креатив - Шампурико", "ПостВариантБ.jpg", "shampuriko", "post-b"),
     ("Креатив - Шампурико", "СторисВариантА.jpg", "shampuriko", "stories-a"),
     ("Креатив - Шампурико", "СторисВариантБ.jpg", "shampuriko", "stories-b"),
     ("Креатив - Шампурико", "Постер.jpg", "shampuriko", "poster"),
+    ("Карточка товара - таблетки", "HF-magniy-01-oblozhka.png", "magnesium-card", "01-cover"),
+    ("Карточка товара - таблетки", "HF-magniy-02-primenenie.png", "magnesium-card", "02-usage"),
+    ("Карточка товара - таблетки", "HF-magniy-03-simptomy.png", "magnesium-card", "03-symptoms"),
     ("Merch", "manute-bol-poster.png", "manute-bol", "presentation"),
-    ("Ping Pong rackets", "Generated Image October 20, 2026 - 7_49PM.png", "keychain", "light"),
-    ("Ping Pong rackets", "Generated Image October 20, 2026 - 7_50PM.png", "keychain", "dark"),
-    ("Notebook", "блокнот.jpg", "notebook", "mockup"),
-    ("Notebook", "баннер.png", "notebook", "artwork"),
-    ("Football Poster", "2 вариант.png", "football-poster", "poster"),
+    ("Салфетки", "01_glavnoe_foto_A.png", "placemats-card", "01-main-a"),
+    ("Салфетки", "главное фтото2.png", "placemats-card", "02-main-b"),
+    ("Салфетки", "03_slayd_UTP.png", "placemats-card", "03-benefits"),
     ("Ping Pong", "Ping Pong Poster v3.mp4", "ping-pong", "animation"),
-    ("Blender works", "final render tutorial.png", "blender-3d", "donut"),
-    ("Blender works", None, "blender-3d", "popsicle"),  # единственный .mp4 в папке
-    ("Menu", "tihij-poster.png", "tihij-menu", "presentation"),
 ]
+# Не публикуются (исходники остаются в works/): карточка блендера (на слайдах надпись
+# «Тестовое задание»), брелок, блокнот, футбольная афиша, меню «Тихий», 3D в Blender.
 
 
 def fit(im, limit):
@@ -73,7 +93,7 @@ RETOUCH = {
 # Почти белый фон, на котором генератор оставил еле заметный узор: выравниваем в чистый белый
 FLATTEN_WHITE = {"Generated Image October 20, 2026 - 7_49PM.png"}
 # Обложки, собранные из нескольких кадров: (папка на сайте, имя) -> [кадры сверху вниз]
-COLLAGES = {("blender-card", "cover"): ["06-brand", "07-quality", "08-delivery"]}
+COLLAGES = {}
 
 
 def retouch(im, boxes):
@@ -149,7 +169,7 @@ def video(src, dst_dir, name):
     mp4 = dst_dir / f"{name}.mp4"
     subprocess.run(
         ["ffmpeg", "-loglevel", "error", "-y", "-i", str(src),
-         "-vf", "scale='min(720,iw)':-2", "-c:v", "libx264", "-crf", "26",
+         "-vf", "scale='if(gt(iw,ih),min(1280,iw),min(720,iw))':-2", "-c:v", "libx264", "-crf", "29", "-r", "30",
          "-preset", "slow", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k",
          "-movflags", "+faststart", str(mp4)],
         check=True,

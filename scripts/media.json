@@ -1,68 +1,169 @@
 {
- "blender-card": {
-  "06-brand": {
+ "pants-card": {
+  "01-main-studio": {
    "type": "image",
-   "w": 1280,
-   "h": 670
+   "w": 1200,
+   "h": 1600
   },
-  "07-quality": {
+  "02-main-city": {
    "type": "image",
-   "w": 1280,
-   "h": 390
+   "w": 1200,
+   "h": 1600
   },
-  "08-delivery": {
+  "03-volume": {
    "type": "image",
-   "w": 1280,
-   "h": 690
+   "w": 1200,
+   "h": 1600
   },
-  "09-seller": {
+  "04-details": {
    "type": "image",
-   "w": 1280,
-   "h": 518
+   "w": 1200,
+   "h": 1600
   },
-  "10-warranty": {
+  "05-back-side": {
    "type": "image",
-   "w": 1280,
-   "h": 832
+   "w": 1200,
+   "h": 1600
   },
-  "cover": {
+  "06-looks": {
    "type": "image",
-   "w": 1280,
-   "h": 1814
+   "w": 1200,
+   "h": 1600
+  },
+  "07-before-after": {
+   "type": "image",
+   "w": 2000,
+   "h": 1395
+  },
+  "08-coat": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "09-coat-before-after": {
+   "type": "image",
+   "w": 2000,
+   "h": 1171
   }
  },
- "magnesium-card": {
-  "01-cover": {
+ "earrings-card": {
+  "01-main-velvet": {
    "type": "image",
-   "w": 1500,
-   "h": 2000
+   "w": 1200,
+   "h": 1600
   },
-  "02-usage": {
+  "02-main-ear": {
    "type": "image",
-   "w": 1500,
-   "h": 2000
+   "w": 1200,
+   "h": 1600
   },
-  "03-symptoms": {
+  "03-main-portrait": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  },
+  "04-main-hand": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  },
+  "05-before-after": {
+   "type": "image",
+   "w": 2000,
+   "h": 1206
+  },
+  "06-funnel-face": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  },
+  "07-funnel-macro": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  },
+  "08-funnel-coating": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  },
+  "09-funnel-look": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  },
+  "10-funnel-backs": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  },
+  "11-funnel-size": {
+   "type": "image",
+   "w": 1200,
+   "h": 1600
+  }
+ },
+ "ai-fashion": {
+  "ladea-opera": {
+   "type": "image",
+   "w": 843,
+   "h": 1264
+  },
+  "ladea-blush": {
+   "type": "image",
+   "w": 896,
+   "h": 1186
+  },
+  "jeans": {
    "type": "image",
    "w": 1500,
    "h": 2000
   }
  },
- "placemats-card": {
-  "01-main-a": {
-   "type": "image",
-   "w": 1500,
-   "h": 2000
+ "legenda": {
+  "print-comes-alive": {
+   "type": "video",
+   "w": 450,
+   "h": 800
+  }
+ },
+ "reels": {
+  "clinic-reedit": {
+   "type": "video",
+   "w": 450,
+   "h": 800
   },
-  "02-main-b": {
-   "type": "image",
-   "w": 1500,
-   "h": 2000
+  "clinic-no-camera": {
+   "type": "video",
+   "w": 450,
+   "h": 800
   },
-  "03-benefits": {
-   "type": "image",
-   "w": 1500,
-   "h": 2000
+  "bvrly": {
+   "type": "video",
+   "w": 450,
+   "h": 800
+  },
+  "makeunion": {
+   "type": "video",
+   "w": 450,
+   "h": 800
+  },
+  "glasno": {
+   "type": "video",
+   "w": 450,
+   "h": 800
+  }
+ },
+ "ai-video": {
+  "surreal": {
+   "type": "video",
+   "w": 800,
+   "h": 592
+  },
+  "khinkali": {
+   "type": "video",
+   "w": 800,
+   "h": 450
   }
  },
  "shampuriko": {
@@ -92,6 +193,23 @@
    "h": 2000
   }
  },
+ "magnesium-card": {
+  "01-cover": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "02-usage": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  },
+  "03-symptoms": {
+   "type": "image",
+   "w": 1500,
+   "h": 2000
+  }
+ },
  "manute-bol": {
   "presentation": {
    "type": "image",
@@ -99,35 +217,21 @@
    "h": 2000
   }
  },
- "keychain": {
-  "light": {
-   "type": "image",
-   "w": 1008,
-   "h": 1047
-  },
-  "dark": {
-   "type": "image",
-   "w": 1008,
-   "h": 1047
-  }
- },
- "notebook": {
-  "mockup": {
+ "placemats-card": {
+  "01-main-a": {
    "type": "image",
    "w": 1500,
    "h": 2000
   },
-  "artwork": {
+  "02-main-b": {
    "type": "image",
-   "w": 1410,
+   "w": 1500,
    "h": 2000
-  }
- },
- "football-poster": {
-  "poster": {
+  },
+  "03-benefits": {
    "type": "image",
-   "w": 1080,
-   "h": 1350
+   "w": 1500,
+   "h": 2000
   }
  },
  "ping-pong": {
@@ -135,25 +239,6 @@
    "type": "video",
    "w": 450,
    "h": 800
-  }
- },
- "blender-3d": {
-  "donut": {
-   "type": "image",
-   "w": 1920,
-   "h": 1080
-  },
-  "popsicle": {
-   "type": "video",
-   "w": 640,
-   "h": 640
-  }
- },
- "tihij-menu": {
-  "presentation": {
-   "type": "image",
-   "w": 1414,
-   "h": 2000
   }
  }
 }
