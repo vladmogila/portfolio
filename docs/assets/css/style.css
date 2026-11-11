@@ -202,6 +202,7 @@ sup { font: 400 0.32em/1 var(--mono); letter-spacing: 0; vertical-align: top; ma
 .case__media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-content: start; }
 .case__media .shot:only-child, .case__media .shot--wide { grid-column: 1 / -1; }
 .case__media .shot:first-child:not(.shot--wide) { grid-column: 1 / -1; }
+.case__media .shot--video:not(.shot--wide):not(:only-child) { grid-column: auto; }
 .shot { overflow: hidden; border-radius: var(--radius); background: var(--card); }
 .shot img, .shot video { width: 100%; }
 .case__media .shot:only-child video { max-width: 520px; margin: 0 auto; }
